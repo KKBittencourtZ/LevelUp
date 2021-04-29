@@ -10,11 +10,20 @@
     <h1>Imagem dinamica</h1>
     <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua do seu navegador</p>
 
-    <picture>
-        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
-        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
-        <img src="Imagens/foto-g.png" alt="Imagem flexível">
-    </picture>
-    <p>Hello</p>
+    <a href="https://kkbittencourtz.github.io/testforup/index.html" target="_blank" rel="external">
+        <picture>
+            <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+            <img src="Imagens/foto-g.png" alt="Imagem flexível">
+        </picture>
+    </a>
+    
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="auto" autoplay controls> 
+        <source src="media/burlesque-heartache.mp3" type="audio/mpeg">
+        <source src="media/burlesque-heartache.mp3" type="audio/ogg">
+        <source src="media/burlesque-heartache.mp3" type="audio/waV">
+    </audio>
 </body>
 </html>
