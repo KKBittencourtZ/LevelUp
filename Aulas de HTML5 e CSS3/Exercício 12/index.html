@@ -8,6 +8,18 @@
 </head>
 <body>
     <h1>Upload de vídeos para a página web</h1>
+
+    <video width="500" poster="imagens/photo-disco-500.png" controls>
+        <source src="media/video-original.mp4" type="video/mp4">
+        <source src="media/video-original.webm" type="video/webm">
+    </video>
     
+    <picture>
+        <source media="(max-width: 550px)" srcset="imagens/photo-disco-300.png" type="image/png">
+        <source media="(max-width: 750px)" srcset="imagens/photo-disco-500.png" type="image/png">
+        <source media="(max-width: 950px)" srcset="imagens/photo-disco-700.png" type="image/png">
+        <source media="(max-width: 1250px)" srcset="imagens/photo-disco-700.png" type="image/png">
+        <img src="imagens/photo-disco-1000.png" alt="Imagem do disco">
+    </picture>
 </body>
 </html>
