@@ -10,6 +10,15 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+            color: green;
+        }
+
         div:hover {
             color: red;
         }
@@ -18,6 +27,10 @@
 <body>
     <h1>Exemplo de Hover</h1>
     <p>Passe o mouse sobre o texto abaixo</p>
-    <div>Passe o mouse aqui</div>
+    <div>
+        Passe o mouse aqui
+        <p>YEH YEH</p>
+    </div>
+    <p>Fim do Exemplo</p>
 </body>
 </html>
