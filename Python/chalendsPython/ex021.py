@@ -1,5 +1,7 @@
-import pygame
-pygame.init()
-pygame.mixer.Sound("chalendsPython/ex021.wav")
-pygame.mixer.Sound.play()
-pygame.event.wait()
+# import pygame
+# pygame.init()
+# pygame.mixer.music.load('ex021.mp3')
+# pygame.mixer.music.play()
+# pygame.event.wait()
+
+# Não deu certo ainda
