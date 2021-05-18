@@ -9,10 +9,7 @@ while continua is not 'N':
     total += preço
     if preço > 1000:
         contmaior += 1
-    if total == preço:
-        menor = preço
-        produtomenor = item
-    elif preço < menor:
+    if total == preço or preço < menor:
         menor = preço
         produtomenor = item
     continua = str(input('Quer continuar? [S/N] ')).strip().upper()[0]
