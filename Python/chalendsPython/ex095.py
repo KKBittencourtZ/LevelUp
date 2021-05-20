@@ -23,7 +23,7 @@ print('~ ' * 25)
 print('cod  nome           gols         total')
 print('--------------------------------------')
 for w, e in enumerate(time):
-    print(f' {w:2}  {e["Nome"]:<15}{e["gols"]} {e["total"]:>3}')
+    print(f' {w:2}  {e["Nome"]:<15}{str(e["gols"]):<15} {e["total"]:<3}')
 print('--------------------------------------')
 while vezes != 999:
     vezes = int(input('Mostrar dados de qual jogador? (999 para parar)'))
@@ -33,7 +33,7 @@ while vezes != 999:
             print(f'  => No jogo {c + 1} fez {time[vezes]["gols"][c]} gols.')
     if vezes == 999:
         print('Tchau Tchau ^^')
-    else:
+    elif vezes > len(time) - 1:
         print('Jogador não encontrado.')
 
 # Solução para a tabela do professor:
