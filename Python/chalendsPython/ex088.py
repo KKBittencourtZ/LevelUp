@@ -1,4 +1,3 @@
-
 from random import randint
 print('-' * 35)
 print(f'{"JOGA NA MEGA SENA":^35}')
