@@ -11,4 +11,5 @@ def fatorial(n, show=False):
     return fat
 
 
-print(fatorial(5, True))
+print(fatorial(5, show=True))
+# pode ser True ou show=True. se for show=False não mostra
