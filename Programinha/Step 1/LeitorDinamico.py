@@ -1,7 +1,4 @@
 import os
-import PySimpleGUI as pg
-
-
 
 
 mugiwaras = ['Ruffy', 'Zoro', 'Nami', 'Usoop', 'Sanji', 'Chopper', 'Nico Robin', 'Franky', 'Brook', 'Jinbe']
