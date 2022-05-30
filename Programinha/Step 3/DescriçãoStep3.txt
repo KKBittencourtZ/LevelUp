@@ -1,0 +1,19 @@
+python 3.7
+PySimpleGUI 4.60.1
+
+O 'Step 3' foi executado com o mesmo corpo que o 'Step 2', a diferença está no layout, o import 
+da biblioteca time e na condicional de validação.
+
+
+A biblioteca time foi importada para usar a função 'sleep()' e dar um tempo entre o clique e a execução
+da funcionalidade.
+
+
+O layout foi feito com 3 linhas, a primeira para receber o texte, a segunda para a função botão e a terceira
+para criar uma caixa de visualização.
+
+
+A condicional de validação foi desnecessária e substituida pelo 'print()', afim de exibir o texto recebido.
+
+
+A finalidade desse programa é receber um texto e transcrevelo em uma caixa de mensagem.
