@@ -1,0 +1,41 @@
+No arquivo 'InterfacePySGUI.py' foi feito uma caixa de login.
+
+
+Nela recebe o login e senha com caixa de entrada e ao clicar no botão Entrar mostra a mensagem:
+'Bem-vindo ao Projeto Simples' no terminal.
+
+
+Começa importando a função PySimplesGUI da biblioteca PySimplesGUI com a terminologia 'sg',
+depois foi dividido em três partes: 'Layout', 'Janela' e 'Ler os eventos'.
+
+
+No Layout foi chamada a função 'sg.theme()' e o tema escolhido foi o 'Reddit'.
+Após foi definido a variável lista que irá compor o Layout e dividida em 4 partes:
+'Primeira linha = campo de login',
+'Segunda linha = campo de senha',
+'Terceira linha = uma checkbox para salvar o login' e
+'Quarta linha = o botão de entrar'.
+
+OBS: Como o código foi bem simples não tinha uma validação com banco de dados de usuários já cadastrados e
+mesmo que selecionasse o checkbox não salvaria em lugar nenhum.
+
+
+Na Janela foi chamada a função 'sg.Window()' com os parametros do título ('Tela de Login') e 
+chamando a lista 'Layout' para a variável janela.
+
+OBS: o título é o que ficará aparecendo entre o ícone e a função fechar.
+
+
+No Ler os eventos foi iniciado um laço 'while True' para que a aplicação permanecesse aberta até ser encerrada.
+Foi chamada a função janela.read() e colocada nas variáveis 'eventos' e 'valores', para ler as informações
+que estão em formato de lista e jogando elas para duas variáveis separadas "Conhecido com  untaking dentro do python".
+Depois foi iniciado um laço condicional com o 'if' com o parametro 'eventos == sg.WINDOW_CLOSED()' para encerrar
+o looping com o break.
+Para funcionalidade da caixa de entrada um segundo 'if' com o parametro 'eventos == "Entrar":', com isso validaria
+se o usuário e a senha estão corretas, mas como não tem uma base de dados para fazer essa validação
+foi feito de uma forma simples para ver a funcionalidade acontecendo.
+Foi iniciado a validação com um segundo 'if' dentro do segundo 'if' com o usuário e senha esperado que 
+ao executar a aplicação e colocar 'cesar' e '123' faz com que printe 'Bem-vindo ao Projeto Simples'.
+
+OBS: Se houvesse um banco de dados para fazer cadastro e validar se o usuário e senha estão cadastrados
+seria um pouco diferente.
